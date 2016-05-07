@@ -4,9 +4,15 @@ package modulo4.test;
 import modulo4.demo.Foo;
 
 public class Bar extends Foo{
-    public int result = 2;
+    private int result = 2;
+
+    @Override
+    public int getResult() {
+        return result;
+    }
     
+    @Override
     public int reportSum(){
-        return super.result +5;
+        return result +3;
     }
 }
