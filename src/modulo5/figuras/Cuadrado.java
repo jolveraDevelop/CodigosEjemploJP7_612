@@ -7,10 +7,17 @@ package modulo5.figuras;
  */
 public class Cuadrado extends Cuadrilatero{
 
-    private double lado;
+    private final double lado ;
 
     public Cuadrado() {
+        this.lado = 20;
     }
+
+    
+    public Cuadrado(int lado) {
+        this.lado = lado;
+    }
+    
     
     @Override
     public double calcularArea() {
@@ -23,10 +30,10 @@ public class Cuadrado extends Cuadrilatero{
         return lado;
     }
 
-    public void setLado(double lado) {
-        this.lado = lado;
-    }
-    
+//    public void setLado(double lado) {
+//        this.lado = lado;
+//    }
+//    
     
 
 }
