@@ -33,6 +33,11 @@ public class MyDate {
     public void setDay(int day) {
         this.day = day;
     }
+    
+    @Override
+    public int hashCode(){
+        return day+month+year;
+    }
    
    
 }
