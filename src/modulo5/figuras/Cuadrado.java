@@ -5,7 +5,7 @@ package modulo5.figuras;
  *
  * @author Roberto Olveras
  */
-public class Cuadrado extends Figura{
+public class Cuadrado extends Cuadrilatero{
 
     private double lado;
 
@@ -17,6 +17,8 @@ public class Cuadrado extends Figura{
         return lado*lado;
     }
 
+    
+    
     public double getLado() {
         return lado;
     }
