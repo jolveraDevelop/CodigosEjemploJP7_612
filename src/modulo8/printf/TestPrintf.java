@@ -40,7 +40,7 @@ public class TestPrintf {
         int quantity = -2;
         String color = "1";
         // We have  quantity Polo color shits that cost price
-        System.out.printf("We have %d %s Polo shirts that cost is %f \n",quantity,color,price);
+        System.out.printf("We have %d %s Polo shirts that cost is $%f \n",quantity,color,price);
         //System.out.printf("We have %d %s Polo shirts that cost is %f \n",color,price,quantity);
         System.out.printf("We have %3$d %1$s Polo shirts that cost is %2$f \n",color,price,quantity);
         System.out.printf("We have %010d %s Polo shirts that cost is %,3.4f \n",quantity,color,price);
@@ -49,5 +49,9 @@ public class TestPrintf {
         System.out.printf("We have %-10d %s Polo shirts that cost is %,3.4f \n",quantity,color,price);
         
         System.out.printf("We have %3$-10d %1$s Polo shirts that cost is %2$,3.4f \n",color,price,quantity);
+        
+        System.out.printf("We have %3$d %1$s Polo shirts that cost is %2$f \n",color,price,quantity);
+        
+        System.out.println("");
     }
 }
