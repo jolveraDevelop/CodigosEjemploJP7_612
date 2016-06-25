@@ -1,0 +1,20 @@
+
+package modulo7.wrappers;
+
+/**
+ *
+ * @author Roberto Olveras
+ */
+public class TestWrapper {
+    public static void main(String[] args) {
+        int valiPrim = 10;
+        Integer valueWrap = 30;
+        Integer valPrimObj = new Integer(5);
+        Integer valueString = Integer.valueOf("25");
+        // autoboxin autounboxin 
+        Integer valInteger = valiPrim; // autoboxin
+        int primVal = valInteger; //autounboxin
+    }
+}
+n autounboxin 
+        Integer valInteger = valiPrim; //

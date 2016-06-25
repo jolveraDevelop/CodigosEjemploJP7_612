@@ -67,8 +67,8 @@ import java.util.regex.Pattern;
 public class TestPatternMatcher {
     public static void main(String[] args) {
         
-        String rex = "h1";
-        String fuente = "<h1>This is an h1</h1>";
+        String rex = "Java.+\\d";
+        String fuente = "Java 7,Java 6";
         
         Pattern pat = Pattern.compile(rex);
         Matcher match = pat.matcher(fuente);
@@ -83,12 +83,8 @@ public class TestPatternMatcher {
         System.out.println("\nFound:");
         int i = 1;
         match.reset();
-        String header = "";
-        //while (match.find()) {
-            match.find();
-            header = match.replaceAll("p");
-            //System.out.println((i++) + ": " + match.group());
-            System.out.println(header);
-        //}
+        while (match.find()) {
+            System.out.println((i++) + ": " + match.group());
+        }
     }
 }
