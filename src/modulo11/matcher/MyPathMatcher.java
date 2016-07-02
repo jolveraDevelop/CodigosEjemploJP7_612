@@ -24,7 +24,7 @@ public class MyPathMatcher extends SimpleFileVisitor<Path> {
     private final PathMatcher matcher;
 
     public MyPathMatcher() {
-        matcher = FileSystems.getDefault().getPathMatcher("glob:*html");
+        matcher = FileSystems.getDefault().getPathMatcher("glob:*{html,pdf}");
     }
     
     void find(Path file){

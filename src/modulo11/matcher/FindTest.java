@@ -23,7 +23,7 @@ public class FindTest extends SimpleFileVisitor<Path> {
 
     private PathMatcher matcher
             = FileSystems.getDefault().getPathMatcher(
-                    "glob:**/??ath/*.class"); 
+                    "glob:**/??r/*.html"); 
 
     @Override
     public FileVisitResult visitFile(Path file, BasicFileAttributes attrs)
@@ -36,6 +36,6 @@ public class FindTest extends SimpleFileVisitor<Path> {
 
     public static void main(String[] args) throws Exception {
         FindTest dirs = new FindTest();
-        Files.walkFileTree(Paths.get("build/classes"), dirs); // start with root
+        Files.walkFileTree(Paths.get("home"), dirs); // start with root
     }
 }
