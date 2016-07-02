@@ -28,6 +28,7 @@ public class BufferedRWTest {
             String record;
             while (((record = br.readLine()) != null)) {
                 bw.write(record);
+                //bw.write("\r\n");
                 bw.newLine();
             }
             //Files.delete(Paths.get(source));
